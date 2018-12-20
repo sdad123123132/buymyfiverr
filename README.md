@@ -1,2 +1,1 @@
-# zesty-tut
-For educational purposes.
+Please clone repo and host on heroku.com and please dont put your token add token on heroku.com and please go to heroku.com and go to resources and on heroku.com you must select worker NOT WEB heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com heroku.com 
