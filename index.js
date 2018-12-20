@@ -1,24 +1,27 @@
-const Discord = require("discord.js");
-const bot = new Discord.Client({disableEveryone: true});
+const Discord = require('discord.js');
+const bot = new Discord.Client();
 
-bot.on("ready", async () => {
-  console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity(`Hey, Wassup!`);
+bot.on('ready', () => {
+  console.log(`Logged in as ${bot.user.tag}!`);
 });
 
-bot.on("message", async message => {
+bot.on('message', msg => {
+   console.log(`${msg.content}`)
+  }
+);
 
-  if (message.author.bot) return;
-  if (message.channel.type === "dm") return;
 
-  let prefix = '-';
-  let messageArray = message.content.split(" ");
-  let cmd = messageArray[0];
-  let args = messageArray.slice(1);
-
-  if (cmd === `${prefix}ping`){
-    message.channel.send("Pong!");
+bot.on('message', msg => {
+  if (msg.content === '!info.bot') {
+    msg.reply("Hi There ```Im a bot named DeathBotzEye aka Nan0Byt3JB```");
   }
 });
+
+bot.on('message', msg => {
+  if (msg.content === '!info.cube') {
+    msg.reply(Eb);
+  }
+});
+
 
 bot.login(process.env.token);
