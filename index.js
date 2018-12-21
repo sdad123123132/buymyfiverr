@@ -18,6 +18,12 @@ bot.on('message', msg => {
 });
 
 bot.on('message', msg => {
+  if (msg.content === '!check.bot.connection') {
+    msg.reply("If you see this message im connected");
+  }
+});
+
+bot.on('message', msg => {
   if (msg.content === '!info.cube') {
     msg.reply(Eb);
   }
