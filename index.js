@@ -19,7 +19,7 @@ bot.on('message', msg => {
 
 bot.on('message', msg => {
   if (msg.content === '!check.bot.connection') {
-    msg.channel.SendMessage("If you see this message im connected");
+    msg.reply("If you see this message im connected");
   }
 });
 
