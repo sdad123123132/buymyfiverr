@@ -17,5 +17,9 @@ bot.on('message', msg => {
   }
 });
 
+bot.on('guildMemberAdd', (guildMember) => {
+   guildMember.addRole(guildMember.guild.roles.find(role => role.name === "member"));
+}
+
 
 bot.login(process.env.token);
